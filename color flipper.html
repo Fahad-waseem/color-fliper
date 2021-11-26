@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>color fllipper</title>
+</head>
+<style>
+body{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#btn{
+display: inline-block;
+padding: 10px;
+border: 2px solid #777;
+background-color:white;
+border-radius: 10px;
+cursor: pointer;
+}
+
+</style>
+<body>
+<div id="container">
+<button id="btn">
+Click Here
+</button>
+</div>  
+<script>
+const btn = document.querySelector('#btn');
+btn.addEventListener('click' ,() => {
+document .body.style.background =`rgb
+(${Math.floor(Math.random() *256)}
+,${Math.floor(Math.random() *256 )} 
+,${Math.floor(Math.random() *256 )})`;
+
+
+});
+
+
+
+
+
+
+
+console.log(btn)
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
